@@ -1,0 +1,57 @@
+version: '3.8'
+
+services:
+  web:
+    build: ./web
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:4000
+    networks:
+      - shield-network
+    depends_on:
+      - gateway
+
+  gateway:
+    build: ./gateway
+    ports:
+      - "4000:4000"
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - PII_SERVICE_URL=http://pii-service:8002
+    networks:
+      - shield-network
+    depends_on:
+      - redis
+      - pii-service
+
+  pii-service:
+    build: ./services/pii-service
+    ports:
+      - "8002:8002"
+    networks:
+      - shield-network
+
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+    networks:
+      - shield-network
+
+  ollama:
+    image: ollama/ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama-data:/root/.ollama
+    networks:
+      - shield-network
+
+networks:
+  shield-network:
+    driver: bridge
+
+volumes:
+  ollama-data:
