@@ -1,5 +1,5 @@
 # Nexus Shield
-### AG-06: Hybrid AI Security Gateway & Governance Middleware
+### Hybrid AI Security Gateway & Governance Middleware
 
 ![Status](https://img.shields.io/badge/Status-Active_Optimization-blue?style=for-the-badge)
 ![Category](https://img.shields.io/badge/Category-Portfolio_Project-red?style=for-the-badge)
@@ -27,7 +27,7 @@ npm run dev
 - **PII masking** — detects and redacts sensitive entities before any model call (Presidio).
 - **Governance middleware** — a NestJS gateway fronting downstream AI/LLM services.
 - **Hybrid architecture** — local policy/redaction with cloud reasoning offload.
-- **Senior signal** — part of the 2026 Hybrid Engineer Blueprint.
+- **Hybrid compute** — application logic runs locally; heavy AI reasoning is offloaded to the cloud.
 
 ## Architecture
 

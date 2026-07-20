@@ -1,7 +1,7 @@
-# Architecture: Nexus Shield (AG-06)
+# Architecture: Nexus Shield
 
 ## Overview
-Nexus Shield is an Antigravity-optimized intelligent proxy. It provides a multi-layered defense mechanism with a **Hybrid Compute Architecture** designed for low-latency security on constrained hardware.
+Nexus Shield is a hybrid-compute-optimized intelligent proxy. It provides a multi-layered defense mechanism with a **Hybrid Compute Architecture** designed for low-latency security on constrained hardware.
 
 ## System Flow (HLD)
 

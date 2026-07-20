@@ -1,4 +1,4 @@
-# Getting Started: Nexus Shield (AG-06)
+# Getting Started: Nexus Shield
 
 ## Prerequisites
 - **Node.js**: v18+
