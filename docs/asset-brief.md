@@ -11,10 +11,10 @@ Grid WebP: `kimo-nexus/public/projects/nexus-shield.webp` (1280×640).
 | Asset | File | Size | Status |
 |---|---|---|---|
 | Thumbnail | `docs/assets/thumbnail.png` | 1280×640 | ✅ Shipped |
-| Hero | `docs/assets/hero_main.png` | 1920×1080 | ✅ Legacy (1024² dark — regen to minimal tier queued) |
-| Workflow | `docs/assets/workflow.png` | 1920×1080 | ⏳ Not generated |
-| Dashboard | `docs/assets/dashboard.png` | 1600×1000 | ⏳ Not generated |
-| Architecture | `docs/assets/architecture.png` | 1600×1000 | ✅ Legacy infographic; also architecture_hybrid.png |
+| Hero | `docs/assets/hero_main.png` | 1920×1080 | ✅ Shipped (V3 minimal) |
+| Workflow | `docs/assets/workflow.png` | 1920×1080 | ✅ Shipped (V3 minimal) |
+| Dashboard | `docs/assets/dashboard.png` | 1600×1000 | ✅ Shipped (V3 minimal) |
+| Architecture | `docs/assets/architecture.png` | 1600×1000 | ✅ Shipped (V3 minimal); also `architecture_hybrid.png` |
 
 ### Thumbnail prompt (required — grid + README)
 
