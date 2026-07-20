@@ -1,11 +1,12 @@
 # Asset Brief — Nexus Shield
 
-**Primary color signature:** `#B6F400` (lime) · **Accent:** `#9CA3AF` (cool gray, circuit traces)
-**Visual tier:** Minimal illustration (no text, no logos, no UI chrome)
-**Domain motif:** Hybrid AI security gateway — sleek **outline shield** (not filled), slightly left of center; subtle **curved circuit pattern** passes through the shield and continues right.
-**Background:** Off-white `#F8F8F6` · **Depth:** 2–3 soft layers (shadows / translucent overlays)
+**Primary color signature:** `#B6F400` · **Accent:** `#9CA3AF`
+**Visual tier:** Minimal illustration (Senior-5 thumbnails/heroes — no text, no logos, no UI chrome)
+**Domain motif:** AI security gateway — outline shield with curved circuit pattern passing through (PII masking before models).
+**Background:** Off-white `#f6f6f5` for minimal assets · `#F5F5F4` if labeled infographic diagrams are added
 
 Save each to `docs/assets/<name>.png`. Site sync: `node kimo-nexus/scripts/sync-portfolio-assets.mjs`.
+Grid WebP: `kimo-nexus/public/projects/nexus-shield.webp` (1280×640).
 
 | Asset | File | Size | Status |
 |---|---|---|---|
@@ -13,8 +14,16 @@ Save each to `docs/assets/<name>.png`. Site sync: `node kimo-nexus/scripts/sync-
 | Hero | `docs/assets/hero_main.png` | 1920×1080 | ✅ Legacy (1024² dark — regen to minimal tier queued) |
 | Workflow | `docs/assets/workflow.png` | 1920×1080 | ⏳ Not generated |
 | Dashboard | `docs/assets/dashboard.png` | 1600×1000 | ⏳ Not generated |
-| Architecture | `docs/assets/architecture.png` | 1600×1000 | ✅ Legacy infographic; also `architecture_hybrid.png` |
+| Architecture | `docs/assets/architecture.png` | 1600×1000 | ✅ Legacy infographic; also architecture_hybrid.png |
 
-### Thumbnail prompt (reference)
+### Thumbnail prompt (required — grid + README)
 
-Premium modern SaaS vector illustration, off-white `#F8F8F6`, no text/logos. Outline shield in lime `#B6F400`, left of center. Flowing curved circuit through shield continuing right. Enterprise cybersecurity, minimal, soft depth.
+Minimal SaaS illustration, light theme, off-white background (#f6f6f5), vector graphic, soft depth, zero text, zero logos, zero UI chrome. **#B6F400** primary + **#9CA3AF** accent. Lime outline shield left-of-center with gray circuit traces flowing through and continuing right.
+
+### Hero / minimal illustration prompt
+
+Minimal SaaS illustration, light theme, off-white background (#f6f6f5), vector graphic, soft depth, zero text, zero logos, zero UI chrome. **#B6F400** primary + **#9CA3AF** accent. Lime outline shield left-of-center with gray circuit traces flowing through and continuing right. Spacious composition, Stripe/Linear aesthetic.
+
+### Infographic prompt seed (architecture — if labeled)
+
+Modern premium AI security gateway infographic, light background `#F5F5F4`, **#B6F400** primary + **#9CA3AF** accent, Inter font, rounded cards, soft shadows. Exact labels only — no placeholder text.
